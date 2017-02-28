@@ -1,0 +1,234 @@
+Last login: Mon Feb 27 16:33:08 on ttys000
+-bash: alias: class-cd /Users/samkeathley/code/wdi/wdi-atx-10/class: not found
+ GA General Assembly  Web Development Immersive 
+------------------------------------------
+git version 2.12.0
+Homebrew 1.1.10 Homebrew/homebrew-core (git revision 28c4; last commit 2017-02-27)
+ruby 2.2.3p173 (2015-08-18 revision 51636) [x86_64-darwin16]
+node v7.6.0
+psql (PostgreSQL) 9.6.2
+------------------------------------------
+type unwelcome to remove this message
+samkeathley ~
+$ cd Desktop/
+samkeathley ~/Desktop
+$ mkdir kitchen
+gmkdir: created directory 'kitchen'
+samkeathley ~/Desktop
+$ cd kitchen
+samkeathley ~/Desktop/kitchen
+$ mkdir fridge
+gmkdir: created directory 'fridge'
+samkeathley ~/Desktop/kitchen
+$ mkdir pantry
+gmkdir: created directory 'pantry'
+samkeathley ~/Desktop/kitchen
+$ touch cans.txt
+samkeathley ~/Desktop/kitchen
+$ cd fridge
+samkeathley ~/Desktop/kitchen/fridge
+$ touch diapers.txt
+samkeathley ~/Desktop/kitchen/fridge
+$ mkdir freezer
+gmkdir: created directory 'freezer'
+samkeathley ~/Desktop/kitchen/fridge
+$ cd ../
+samkeathley ~/Desktop/kitchen
+$ cd pantry
+samkeathley ~/Desktop/kitchen/pantry
+$ touch cans.txt
+samkeathley ~/Desktop/kitchen/pantry
+$ touch cereal.txt
+samkeathley ~/Desktop/kitchen/pantry
+$ mkdir crisper-drawer
+gmkdir: created directory 'crisper-drawer'
+samkeathley ~/Desktop/kitchen/pantry
+$ cd crisper-drawer/
+samkeathley ~/Desktop/kitchen/pantry/crisper-drawer
+$ touch lettuce.txt
+samkeathley ~/Desktop/kitchen/pantry/crisper-drawer
+$ cd ../
+samkeathley ~/Desktop/kitchen/pantry
+$ cd ../
+samkeathley ~/Desktop/kitchen
+$ cd fridge
+samkeathley ~/Desktop/kitchen/fridge
+$ cd freezer
+samkeathley ~/Desktop/kitchen/fridge/freezer
+$ touch couch.txt
+samkeathley ~/Desktop/kitchen/fridge/freezer
+$ touch frozenpeas.txt
+samkeathley ~/Desktop/kitchen/fridge/freezer
+$ touch icecream.txt
+samkeathley ~/Desktop/kitchen/fridge/freezer
+$ cd ../
+samkeathley ~/Desktop/kitchen/fridge
+$ touch milk.txt
+samkeathley ~/Desktop/kitchen/fridge
+$ mkdir trashcan
+gmkdir: created directory 'trashcan'
+samkeathley ~/Desktop/kitchen/fridge
+$ cd trashcan
+samkeathley ~/Desktop/kitchen/fridge/trashcan
+$ touch banana-peels.txt
+samkeathley ~/Desktop/kitchen/fridge/trashcan
+$ touch chicken-bones.txt
+samkeathley ~/Desktop/kitchen/fridge/trashcan
+$ touch egg-shells.txt
+samkeathley ~/Desktop/kitchen/fridge/trashcan
+$ mkdir sink
+gmkdir: created directory 'sink'
+samkeathley ~/Desktop/kitchen/fridge/trashcan
+$ cd sink
+samkeathley ~/Desktop/kitchen/fridge/trashcan/sink
+$ touch clean-dishes.txt
+samkeathley ~/Desktop/kitchen/fridge/trashcan/sink
+$ touch delete-me.txt
+samkeathley ~/Desktop/kitchen/fridge/trashcan/sink
+$ touch dirty-dishes.txt
+samkeathley ~/Desktop/kitchen/fridge/trashcan/sink
+$ cd
+samkeathley ~
+$ 
+samkeathley ~
+$ cd Desktop/
+samkeathley ~/Desktop
+$ ls
+GA-Blog/  TomorrowNight.terminal  code/  kitchen/  temp.html
+samkeathley ~/Desktop
+$ cd kitchen
+samkeathley ~/Desktop/kitchen
+$ tree
+-bash: tree: command not found
+samkeathley ~/Desktop/kitchen
+$ brew install tree
+Updating Homebrew...
+==> Auto-updated Homebrew!
+Updated 2 taps (homebrew/core, homebrew/dupes).
+==> New Formulae
+buildifier                 monitoring-plugins         pqiv
+==> Updated Formulae
+concurrencykit             homebrew/dupes/screen      youtube-dl
+erlang                     vnu
+
+==> Downloading https://homebrew.bintray.com/bottles/tree-1.7.0.sierra.bottle.1.
+######################################################################## 100.0%
+==> Pouring tree-1.7.0.sierra.bottle.1.tar.gz
+🍺  /usr/local/Cellar/tree/1.7.0: 7 files, 113.3K
+samkeathley ~/Desktop/kitchen
+$ tree
+.
+├── cans.txt
+├── fridge
+│   ├── diapers.txt
+│   ├── freezer
+│   │   ├── couch.txt
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   ├── milk.txt
+│   └── trashcan
+│       ├── banana-peels.txt
+│       ├── chicken-bones.txt
+│       ├── egg-shells.txt
+│       └── sink
+│           ├── clean-dishes.txt
+│           ├── delete-me.txt
+│           └── dirty-dishes.txt
+└── pantry
+    ├── cans.txt
+    ├── cereal.txt
+    └── crisper-drawer
+        └── lettuce.txt
+
+6 directories, 15 files
+samkeathley ~/Desktop/kitchen
+$ fridge
+-bash: fridge: command not found
+samkeathley ~/Desktop/kitchen
+$ rm cans.txt
+removed 'cans.txt'
+samkeathley ~/Desktop/kitchen
+$ mv pantry/crisper-drawer fridge
+'pantry/crisper-drawer' -> 'fridge/crisper-drawer'
+samkeathley ~/Desktop/kitchen
+$ touch fridge/crisper-drawer/apples.txt
+samkeathley ~/Desktop/kitchen
+$ rm fridge/diapers.txt
+removed 'fridge/diapers.txt'
+samkeathley ~/Desktop/kitchen
+$ rm fridge/freezer/couch.txt
+removed 'fridge/freezer/couch.txt'
+samkeathley ~/Desktop/kitchen
+$ mv fridge/trashcan/sink kitchen
+'fridge/trashcan/sink' -> 'kitchen'
+samkeathley ~/Desktop/kitchen
+$ rm sink/delete-me.txt
+grm: cannot remove 'sink/delete-me.txt': No such file or directory
+samkeathley ~/Desktop/kitchen
+$ ls sink
+gls: cannot access 'sink': No such file or directory
+samkeathley ~/Desktop/kitchen
+$ tree
+.
+├── fridge
+│   ├── crisper-drawer
+│   │   ├── apples.txt
+│   │   └── lettuce.txt
+│   ├── freezer
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   ├── milk.txt
+│   └── trashcan
+│       ├── banana-peels.txt
+│       ├── chicken-bones.txt
+│       └── egg-shells.txt
+├── kitchen
+│   ├── clean-dishes.txt
+│   ├── delete-me.txt
+│   └── dirty-dishes.txt
+└── pantry
+    ├── cans.txt
+    └── cereal.txt
+
+6 directories, 13 files
+samkeathley ~/Desktop/kitchen
+$ mv kitchen sink
+'kitchen' -> 'sink'
+samkeathley ~/Desktop/kitchen
+$ rm sink/delete-me.txt
+removed 'sink/delete-me.txt'
+samkeathley ~/Desktop/kitchen
+$ mkdir sink/drying-rack
+gmkdir: created directory 'sink/drying-rack'
+samkeathley ~/Desktop/kitchen
+$ mv sink/clean-dishes.txt sink/drying-rack
+'sink/clean-dishes.txt' -> 'sink/drying-rack/clean-dishes.txt'
+samkeathley ~/Desktop/kitchen
+$ mv fridge/trashcan .
+'fridge/trashcan' -> './trashcan'
+samkeathley ~/Desktop/kitchen
+$ tree
+.
+├── fridge
+│   ├── crisper-drawer
+│   │   ├── apples.txt
+│   │   └── lettuce.txt
+│   ├── freezer
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   └── milk.txt
+├── pantry
+│   ├── cans.txt
+│   └── cereal.txt
+├── sink
+│   ├── dirty-dishes.txt
+│   └── drying-rack
+│       └── clean-dishes.txt
+└── trashcan
+    ├── banana-peels.txt
+    ├── chicken-bones.txt
+    └── egg-shells.txt
+
+7 directories, 12 files
+samkeathley ~/Desktop/kitchen
+$ 
